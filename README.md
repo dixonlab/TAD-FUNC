@@ -7,7 +7,7 @@ perl ../Random_genome_wide_training_set.pl example_b38d5_40kb.super_matrix.filte
 #Generate 10000 random coordinates for training set and crossvalidation set. example_b38d5_40kb.super_matrix.filter.norm.DI.format.domain.txt is a bed file that contains previous TAD annotation.
 
 perl ../extract_diamonds.pl example_b38d5_40kb.super_matrix.filter.norm.txt example.training.diamond.txt 2000000 > example.training.diamond.matrix.txt 
-#Generate diamond matrices for training set. example_b38d5_40kb.super_matrix.filter.norm.txt is the file recording Hi-C interaction supermatrix after filtration and normalization.
+#Generate diamond matrices for training set. example_b38d5_40kb.super_matrix.filter.norm.txt is the file recording Hi-C interaction supermatrix after filtration and normalization. It can be downloaded via link: https://salkinstitute.box.com/s/9w70b3qfkn1rdarxp530w1cznxi85ij1
 
 perl ../extract_diamonds.pl example_b38d5_40kb.super_matrix.filter.norm.txt example.crossvalidation.diamond.txt 2000000 > example.crossvalidation.diamond.matrix.txt 
 #Generate diamond matrices for crossvalidation set
